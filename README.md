@@ -1,6 +1,6 @@
 
 
-# <a href="url"><img src="https://raw.githubusercontent.com/dofapi/crawlit-dofus-encyclopedia-parser/master/assets/crawlit.png" align="left" height="50" width="50" ></a>Dofapi - Dofus & Dofus-Touch API
+# <a href="url"><img src="https://raw.githubusercontent.com/dofapi/crawlit-dofus-encyclopedia-parser/master/assets/favicon.ico" align="left" height="50" width="50" ></a>Dofapi - Dofus & Dofus-Touch API
 [![sosnoob](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/buildwithlove.png)](https://www.sosnoob.com)
 [![sosnoob](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/buymecoffee.png)](https://www.paypal.me/sosnoob)
 
