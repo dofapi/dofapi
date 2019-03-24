@@ -1,0 +1,10 @@
+{
+  "name": "mlab",
+  "connector": "mongodb",
+  "url": "confidential",
+  "host": "confidential",
+  "port": 6989,
+  "user": "confidential",
+  "password": "confidential",
+  "database": "confidential"
+}
