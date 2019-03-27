@@ -34,6 +34,7 @@ Dofapi was build with  :
 - Full Javascript / Nodejs
 - Loopback 4 REST API framework
 - Typescript
+
 ![](https://raw.githubusercontent.com/raczak/crawlit-dofus-encyclopedia-parser/master/assets/node-js.png)
 
 ## Getting started [Developers Only]
