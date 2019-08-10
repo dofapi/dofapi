@@ -1,27 +1,13 @@
 import { Getter, inject } from '@loopback/core';
-import {
-  DefaultCrudRepository,
-  HasManyRepositoryFactory,
-  juggler,
-  repository,
-} from '@loopback/repository';
+import { DefaultCrudRepository, HasManyRepositoryFactory, juggler, repository } from '@loopback/repository';
 import { Set, Equipment, Weapon } from '../models';
 import { EquipmentRepository } from './equipment.repository';
 import { WeaponRepository } from './weapon.repository';
 import { DbDataSource } from '../datasources';
 
-export class SetRepository extends DefaultCrudRepository<
-  Set,
-  typeof Set.prototype._id
-  > {
-  public readonly equipments: HasManyRepositoryFactory<
-    Equipment,
-    typeof Set.prototype._id
-  >;
-  public readonly weapons: HasManyRepositoryFactory<
-    Weapon,
-    typeof Set.prototype._id
-  >;
+export class SetRepository extends DefaultCrudRepository<Set, typeof Set.prototype._id> {
+  public readonly equipments: HasManyRepositoryFactory<Equipment, typeof Set.prototype._id>;
+  public readonly weapons: HasManyRepositoryFactory<Weapon, typeof Set.prototype._id>;
 
   constructor(
     @inject('datasources.db') dataSource: DbDataSource,

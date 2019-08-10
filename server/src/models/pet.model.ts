@@ -7,19 +7,13 @@ export class Pet extends Item {
     type: 'array',
     itemType: 'object',
   })
-  stats?: object[];
+  statistics?: object[];
 
   @property({
     type: 'array',
     itemType: 'string',
   })
-  condition?: string[];
-
-  @property({
-    type: 'array',
-    itemType: 'string',
-  })
-  maxstats?: string[];
+  conditions?: string[];
 
   constructor(data?: Partial<Pet>) {
     super(data);

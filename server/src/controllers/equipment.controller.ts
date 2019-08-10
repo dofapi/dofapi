@@ -25,17 +25,17 @@ export class EquipmentController {
     protected equipmentRepository: EquipmentRepository,
   ) { }
 
-  // @post('/equipment', {
-  //   responses: {
-  //     '200': {
-  //       description: 'Equipment model instance',
-  //       content: { 'application/json': { schema: { 'x-ts-type': Equipment } } },
-  //     },
-  //   },
-  // })
-  // async create(@requestBody() equipment: Equipment): Promise<Equipment> {
-  //   return await this.equipmentRepository.create(equipment);
-  // }
+  @post('/equipment', {
+    responses: {
+      '200': {
+        description: 'Equipment model instance',
+        content: { 'application/json': { schema: { 'x-ts-type': Equipment } } },
+      },
+    },
+  })
+  async create(@requestBody() equipment: Equipment): Promise<Equipment> {
+    return await this.equipmentRepository.create(equipment);
+  }
 
   @get('/equipments/count', {
     responses: {

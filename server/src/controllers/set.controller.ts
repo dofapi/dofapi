@@ -25,17 +25,17 @@ export class SetController {
     public setRepository: SetRepository,
   ) { }
 
-  // @post('/sets', {
-  //   responses: {
-  //     '200': {
-  //       description: 'Set model instance',
-  //       content: { 'application/json': { schema: { 'x-ts-type': Set } } },
-  //     },
-  //   },
-  // })
-  // async create(@requestBody() set: Set): Promise<Set> {
-  //   return await this.setRepository.create(set);
-  // }
+  @post('/sets', {
+    responses: {
+      '200': {
+        description: 'Set model instance',
+        content: { 'application/json': { schema: { 'x-ts-type': Set } } },
+      },
+    },
+  })
+  async create(@requestBody() set: Set): Promise<Set> {
+    return await this.setRepository.create(set);
+  }
 
   @get('/sets/count', {
     responses: {

@@ -2,7 +2,7 @@ export * from './ping.controller';
 export * from './pet.controller';
 export * from './equipment.controller';
 export * from './set.controller';
-export * from './set-equipment.controller';
+export * from './set-equipments.controller';
 export * from './weapon.controller';
 export * from './set-weapon.controller';
 export * from './mount.controller';

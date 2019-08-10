@@ -1,5 +1,5 @@
-import {model, property} from '@loopback/repository';
-import {Item} from '.';
+import { model, property } from '@loopback/repository';
+import { Item } from '.';
 
 @model()
 export class Mount extends Item {
@@ -7,13 +7,25 @@ export class Mount extends Item {
     type: 'array',
     itemType: 'object',
   })
-  stats?: object[];
+  statistics?: object[];
 
   @property({
     type: 'array',
     itemType: 'object',
   })
-  characteristic?: object[];
+  characteristics?: object[];
+
+  @property({
+    type: 'array',
+    itemType: 'string',
+  })
+  conditions?: string[];
+
+  @property({
+    type: 'array',
+    itemType: 'object',
+  })
+  recipe?: object[];
 
   constructor(data?: Partial<Mount>) {
     super(data);

@@ -18,7 +18,7 @@ import {
 import { Equipment } from '../models';
 
 
-export class SetEquipmentController {
+export class SetEquipmentsController {
   constructor(
     @repository(SetRepository) protected setRepo: SetRepository,
   ) { }
@@ -28,7 +28,7 @@ export class SetEquipmentController {
   //   return await this.setRepo.equipments(id).create(equipment);
   // }
 
-  @get('/sets/{id}/equipments', {
+  @get('/set/{id}/equipments', {
     responses: {
       '200': {
         description: "Array of equipment's belonging to set",

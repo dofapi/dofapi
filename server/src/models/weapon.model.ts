@@ -8,19 +8,19 @@ export class Weapon extends Item {
     type: 'array',
     itemType: 'object',
   })
-  stats?: object[];
+  statistics?: object[];
 
   @property({
     type: 'array',
     itemType: 'string',
   })
-  condition?: string[];
+  conditions?: string[];
 
   @property({
     type: 'array',
     itemType: 'object',
   })
-  characteristic?: object[];
+  characteristics?: object[];
 
   @property({
     type: 'array',

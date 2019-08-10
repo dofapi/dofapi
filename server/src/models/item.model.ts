@@ -10,6 +10,11 @@ export class Item extends Entity {
   _id: number;
 
   @property({
+    type: 'number',
+  })
+  ankamaId?: number;
+
+  @property({
     type: 'string',
   })
   name?: string;
@@ -17,7 +22,7 @@ export class Item extends Entity {
   @property({
     type: 'number',
   })
-  lvl?: number;
+  level?: number;
 
   @property({
     type: 'string',

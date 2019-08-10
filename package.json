@@ -1,6 +1,6 @@
 {
   "name": "dofapi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Dofus encyclopedia API",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
     "build:client": "next build client",
     "build:server": "lb-tsc es2017 --outDir server/dist -p server",
     "start": "node .",
+    "prestart": "npm run build",
     "heroku-postbuild": "npm run build"
   },
   "author": "",

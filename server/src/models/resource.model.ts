@@ -1,5 +1,5 @@
-import {model, property} from '@loopback/repository';
-import {Item} from '.';
+import { model, property } from '@loopback/repository';
+import { Item } from '.';
 
 @model()
 export class Resource extends Item {

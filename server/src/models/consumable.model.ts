@@ -1,5 +1,5 @@
-import {model, property} from '@loopback/repository';
-import {Item} from '.';
+import { model, property } from '@loopback/repository';
+import { Item } from '.';
 
 @model()
 export class Consumable extends Item {
@@ -7,13 +7,13 @@ export class Consumable extends Item {
     type: 'array',
     itemType: 'object',
   })
-  stats?: object[];
+  statistics?: object[];
 
   @property({
     type: 'array',
     itemType: 'string',
   })
-  condition?: string[];
+  conditions?: string[];
 
   @property({
     type: 'array',

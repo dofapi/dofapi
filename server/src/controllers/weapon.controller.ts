@@ -25,17 +25,17 @@ export class WeaponController {
     public weaponRepository: WeaponRepository,
   ) { }
 
-  // @post('/weapons', {
-  //   responses: {
-  //     '200': {
-  //       description: 'Weapon model instance',
-  //       content: { 'application/json': { schema: { 'x-ts-type': Weapon } } },
-  //     },
-  //   },
-  // })
-  // async create(@requestBody() weapon: Weapon): Promise<Weapon> {
-  //   return await this.weaponRepository.create(weapon);
-  // }
+  @post('/weapons', {
+    responses: {
+      '200': {
+        description: 'Weapon model instance',
+        content: { 'application/json': { schema: { 'x-ts-type': Weapon } } },
+      },
+    },
+  })
+  async create(@requestBody() weapon: Weapon): Promise<Weapon> {
+    return await this.weaponRepository.create(weapon);
+  }
 
   @get('/weapons/count', {
     responses: {
