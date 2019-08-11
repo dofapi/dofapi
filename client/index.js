@@ -1,9 +1,9 @@
 const express = require('express');
 const next = require('next');
 
-module.exports = async function({ beforeNext = () => {}, dir = '.' } = {}) {
+module.exports = async function ({ beforeNext = () => { }, dir = '.' } = {}) {
   const dev = process.env.NODE_ENV === 'development';
-  const port = process.env.PORT || 3000;
+  const port = process.env.PORT || 80;
 
   const app = next({ dev, dir });
   const handle = app.getRequestHandler();
