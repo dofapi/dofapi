@@ -5,7 +5,7 @@ export * from './weapon.repository';
 export * from './mount.repository';
 export * from './resource.repository';
 export * from './consumable.repository';
-export * from './class.repository';
+export * from './classe.repository';
 export * from './harness.repository';
 export * from './havenbag.repository';
 export * from './idol.repository';

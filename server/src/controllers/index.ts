@@ -8,7 +8,7 @@ export * from './set-weapon.controller';
 export * from './mount.controller';
 export * from './resource.controller';
 export * from './consumable.controller';
-export * from './classe.controllerr';
+export * from './classe.controller';
 export * from './harness.controller';
 export * from './havenbag.controller';
 export * from './idol.controller';

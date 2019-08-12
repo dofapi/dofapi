@@ -19,10 +19,10 @@ import {
 import { Classe } from '../models';
 import { ClasseRepository } from '../repositories';
 
-export classe ClasseController {
+export class ClasseController {
     constructor(
         @repository(ClasseRepository)
-    public classeRepository: ClasseRepository,
+        public classeRepository: ClasseRepository,
     ) { }
 
     // @post('/classes', {
@@ -46,8 +46,8 @@ export classe ClasseController {
         },
     })
     async count(
-        @param.query.object('where', getWhereSchemaFor(Classe)) where ?: Where,
-    ): Promise < Count > {
+        @param.query.object('where', getWhereSchemaFor(Classe)) where?: Where,
+    ): Promise<Count> {
         return await this.classeRepository.count(where);
     }
 
@@ -64,8 +64,8 @@ export classe ClasseController {
         },
     })
     async find(
-        @param.query.object('filter', getFilterSchemaFor(Classe)) filter ?: Filter,
-    ): Promise < Classe[] > {
+        @param.query.object('filter', getFilterSchemaFor(Classe)) filter?: Filter,
+    ): Promise<Classe[]> {
         return await this.classeRepository.find(filter);
     }
 
@@ -92,7 +92,7 @@ export classe ClasseController {
             },
         },
     })
-    async findById(@param.path.number('id') id: number): Promise < Classe > {
+    async findById(@param.path.number('id') id: number): Promise<Classe> {
         return await this.classeRepository.findById(id);
     }
 
