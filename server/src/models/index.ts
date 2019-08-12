@@ -6,7 +6,7 @@ export * from './weapon.model';
 export * from './mount.model';
 export * from './resource.model';
 export * from './consumable.model';
-export * from './class.model';
+export * from './classe.model';
 export * from './harness.model';
 export * from './havenbag.model';
 export * from './idol.model';

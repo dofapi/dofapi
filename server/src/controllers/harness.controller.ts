@@ -37,7 +37,7 @@ export class HarnessController {
     //   return await this.harnessRepository.create(harness);
     // }
 
-    @get('/harnesss/count', {
+    @get('/harnesses/count', {
         responses: {
             '200': {
                 description: 'Harness model count',
@@ -51,7 +51,7 @@ export class HarnessController {
         return await this.harnessRepository.count(where);
     }
 
-    @get('/harnesss', {
+    @get('/harnesses', {
         responses: {
             '200': {
                 description: 'Array of Harness model instances',
@@ -69,7 +69,7 @@ export class HarnessController {
         return await this.harnessRepository.find(filter);
     }
 
-    // @patch('/harnesss', {
+    // @patch('/harnesses', {
     //   responses: {
     //     '200': {
     //       description: 'Harness PATCH success count',
@@ -84,7 +84,7 @@ export class HarnessController {
     //   return await this.harnessRepository.updateAll(harness, where);
     // }
 
-    @get('/harnesss/{id}', {
+    @get('/harnesses/{id}', {
         responses: {
             '200': {
                 description: 'Harness model instance',
@@ -96,7 +96,7 @@ export class HarnessController {
         return await this.harnessRepository.findById(id);
     }
 
-    // @patch('/harnesss/{id}', {
+    // @patch('/harnesses/{id}', {
     //   responses: {
     //     '204': {
     //       description: 'Harness PATCH success',
@@ -110,7 +110,7 @@ export class HarnessController {
     //   await this.harnessRepository.updateById(id, harness);
     // }
 
-    // @put('/harnesss/{id}', {
+    // @put('/harnesses/{id}', {
     //   responses: {
     //     '204': {
     //       description: 'Harness PUT success',
@@ -124,7 +124,7 @@ export class HarnessController {
     //   await this.harnessRepository.replaceById(id, harness);
     // }
 
-    // @del('/harnesss/{id}', {
+    // @del('/harnesses/{id}', {
     //   responses: {
     //     '204': {
     //       description: 'Harness DELETE success',
