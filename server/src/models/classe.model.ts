@@ -2,7 +2,7 @@ import { model, property } from '@loopback/repository';
 import { Item } from './item.model';
 
 @model()
-export class Class extends Item {
+export class Classe extends Item {
   @property({
     type: 'string',
   })
@@ -40,7 +40,7 @@ export class Class extends Item {
   })
   femaleImg?: string;
 
-  constructor(data?: Partial<Class>) {
+  constructor(data?: Partial<Classe>) {
     super(data);
   }
 }
