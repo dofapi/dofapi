@@ -17,9 +17,10 @@ export class Weapon extends Item {
   conditions?: string[];
 
   @property({
+    type: 'array',
     itemType: 'object',
   })
-  characteristics?: object;
+  characteristics?: object[];
 
   @property({
     type: 'array',
