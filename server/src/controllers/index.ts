@@ -9,8 +9,5 @@ export * from './mount.controller';
 export * from './resource.controller';
 export * from './consumable.controller';
 export * from './classe.controller';
-export * from './harness.controller';
-export * from './havenbag.controller';
-export * from './idol.controller';
 export * from './monster.controller';
 export * from './profession.controller';
