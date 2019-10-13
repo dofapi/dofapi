@@ -1,0 +1,3125 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "LoopBack Application",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/classes/count": {
+            "get": {
+                "x-controller-name": "ClasseController",
+                "x-operation-name": "count",
+                "tags": [
+                    "ClasseController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Classe model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "ClasseController.count"
+            }
+        },
+        "/classes/{id}": {
+            "get": {
+                "x-controller-name": "ClasseController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "ClasseController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Classe model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Classe"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "ClasseController.findById"
+            }
+        },
+        "/classes": {
+            "get": {
+                "x-controller-name": "ClasseController",
+                "x-operation-name": "find",
+                "tags": [
+                    "ClasseController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Classe model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Classe"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "category": {
+                                            "type": "boolean"
+                                        },
+                                        "title": {
+                                            "type": "boolean"
+                                        },
+                                        "videoUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "roles": {
+                                            "type": "boolean"
+                                        },
+                                        "spells": {
+                                            "type": "boolean"
+                                        },
+                                        "maleImg": {
+                                            "type": "boolean"
+                                        },
+                                        "femaleImg": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "ClasseController.find"
+            }
+        },
+        "/consumables/count": {
+            "get": {
+                "x-controller-name": "ConsumableController",
+                "x-operation-name": "count",
+                "tags": [
+                    "ConsumableController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Consumable model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "ConsumableController.count"
+            }
+        },
+        "/consumables/{id}": {
+            "get": {
+                "x-controller-name": "ConsumableController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "ConsumableController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Consumable model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Consumable"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "ConsumableController.findById"
+            }
+        },
+        "/consumables": {
+            "get": {
+                "x-controller-name": "ConsumableController",
+                "x-operation-name": "find",
+                "tags": [
+                    "ConsumableController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Consumable model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Consumable"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "statistics": {
+                                            "type": "boolean"
+                                        },
+                                        "conditions": {
+                                            "type": "boolean"
+                                        },
+                                        "recipe": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "ConsumableController.find"
+            }
+        },
+        "/equipments/count": {
+            "get": {
+                "x-controller-name": "EquipmentController",
+                "x-operation-name": "count",
+                "tags": [
+                    "EquipmentController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Equipment model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "EquipmentController.count"
+            }
+        },
+        "/equipments/{id}/set": {
+            "get": {
+                "x-controller-name": "EquipmentController",
+                "x-operation-name": "findOwningList",
+                "tags": [
+                    "EquipmentController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Set model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Set"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "EquipmentController.findOwningList"
+            }
+        },
+        "/equipments/{id}": {
+            "get": {
+                "x-controller-name": "EquipmentController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "EquipmentController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Equipment model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Equipment"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "EquipmentController.findById"
+            }
+        },
+        "/equipments": {
+            "get": {
+                "x-controller-name": "EquipmentController",
+                "x-operation-name": "find",
+                "tags": [
+                    "EquipmentController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Equipment model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Equipment"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "statistics": {
+                                            "type": "boolean"
+                                        },
+                                        "conditions": {
+                                            "type": "boolean"
+                                        },
+                                        "recipe": {
+                                            "type": "boolean"
+                                        },
+                                        "setId": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "include": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "relation": {
+                                                "type": "string"
+                                            },
+                                            "scope": {
+                                                "properties": {
+                                                    "where": {
+                                                        "type": "object"
+                                                    },
+                                                    "fields": {
+                                                        "type": "object",
+                                                        "properties": {}
+                                                    },
+                                                    "offset": {
+                                                        "type": "integer",
+                                                        "minimum": 0
+                                                    },
+                                                    "limit": {
+                                                        "type": "integer",
+                                                        "minimum": 0
+                                                    },
+                                                    "skip": {
+                                                        "type": "integer",
+                                                        "minimum": 0
+                                                    },
+                                                    "order": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "EquipmentController.find"
+            }
+        },
+        "/harnesses/count": {
+            "get": {
+                "x-controller-name": "HarnessController",
+                "x-operation-name": "count",
+                "tags": [
+                    "HarnessController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Harness model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "HarnessController.count"
+            }
+        },
+        "/harnesses/{id}": {
+            "get": {
+                "x-controller-name": "HarnessController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "HarnessController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Harness model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Harness"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "HarnessController.findById"
+            }
+        },
+        "/harnesses": {
+            "get": {
+                "x-controller-name": "HarnessController",
+                "x-operation-name": "find",
+                "tags": [
+                    "HarnessController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Harness model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Harness"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "recipe": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "HarnessController.find"
+            }
+        },
+        "/havenbags/count": {
+            "get": {
+                "x-controller-name": "HavenbagController",
+                "x-operation-name": "count",
+                "tags": [
+                    "HavenbagController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Havenbag model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "HavenbagController.count"
+            }
+        },
+        "/havenbags/{id}": {
+            "get": {
+                "x-controller-name": "HavenbagController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "HavenbagController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Havenbag model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Havenbag"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "HavenbagController.findById"
+            }
+        },
+        "/havenbags": {
+            "get": {
+                "x-controller-name": "HavenbagController",
+                "x-operation-name": "find",
+                "tags": [
+                    "HavenbagController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Havenbag model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Havenbag"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "furnitures": {
+                                            "type": "boolean"
+                                        },
+                                        "decors": {
+                                            "type": "boolean"
+                                        },
+                                        "grounds": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "HavenbagController.find"
+            }
+        },
+        "/idols/count": {
+            "get": {
+                "x-controller-name": "IdolController",
+                "x-operation-name": "count",
+                "tags": [
+                    "IdolController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Idol model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "IdolController.count"
+            }
+        },
+        "/idols/{id}": {
+            "get": {
+                "x-controller-name": "IdolController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "IdolController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Idol model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Idol"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "IdolController.findById"
+            }
+        },
+        "/idols": {
+            "get": {
+                "x-controller-name": "IdolController",
+                "x-operation-name": "find",
+                "tags": [
+                    "IdolController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Idol model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Idol"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "statistics": {
+                                            "type": "boolean"
+                                        },
+                                        "spells": {
+                                            "type": "boolean"
+                                        },
+                                        "bonus": {
+                                            "type": "boolean"
+                                        },
+                                        "recipe": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "IdolController.find"
+            }
+        },
+        "/monsters/count": {
+            "get": {
+                "x-controller-name": "MonsterController",
+                "x-operation-name": "count",
+                "tags": [
+                    "MonsterController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Monster model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "MonsterController.count"
+            }
+        },
+        "/monsters/{id}": {
+            "get": {
+                "x-controller-name": "MonsterController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "MonsterController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Monster model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Monster"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "MonsterController.findById"
+            }
+        },
+        "/monsters": {
+            "get": {
+                "x-controller-name": "MonsterController",
+                "x-operation-name": "find",
+                "tags": [
+                    "MonsterController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Monster model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Monster"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "statistics": {
+                                            "type": "boolean"
+                                        },
+                                        "resistances": {
+                                            "type": "boolean"
+                                        },
+                                        "areas": {
+                                            "type": "boolean"
+                                        },
+                                        "drops": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "MonsterController.find"
+            }
+        },
+        "/mounts/count": {
+            "get": {
+                "x-controller-name": "MountController",
+                "x-operation-name": "count",
+                "tags": [
+                    "MountController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Mount model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "MountController.count"
+            }
+        },
+        "/mounts/{id}": {
+            "get": {
+                "x-controller-name": "MountController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "MountController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Mount model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Mount"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "MountController.findById"
+            }
+        },
+        "/mounts": {
+            "get": {
+                "x-controller-name": "MountController",
+                "x-operation-name": "find",
+                "tags": [
+                    "MountController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Mount model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Mount"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "statistics": {
+                                            "type": "boolean"
+                                        },
+                                        "characteristics": {
+                                            "type": "boolean"
+                                        },
+                                        "conditions": {
+                                            "type": "boolean"
+                                        },
+                                        "recipe": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "MountController.find"
+            }
+        },
+        "/pets/count": {
+            "get": {
+                "x-controller-name": "PetController",
+                "x-operation-name": "count",
+                "tags": [
+                    "PetController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Pet model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "PetController.count"
+            }
+        },
+        "/pets/{id}": {
+            "get": {
+                "x-controller-name": "PetController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "PetController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Pet model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Pet"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "PetController.findById"
+            }
+        },
+        "/pets": {
+            "get": {
+                "x-controller-name": "PetController",
+                "x-operation-name": "find",
+                "tags": [
+                    "PetController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Pet model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Pet"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "statistics": {
+                                            "type": "boolean"
+                                        },
+                                        "conditions": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "PetController.find"
+            }
+        },
+        "/professions/count": {
+            "get": {
+                "x-controller-name": "ProfessionController",
+                "x-operation-name": "count",
+                "tags": [
+                    "ProfessionController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Profession model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "ProfessionController.count"
+            }
+        },
+        "/professions/{id}": {
+            "get": {
+                "x-controller-name": "ProfessionController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "ProfessionController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Profession model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Profession"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "ProfessionController.findById"
+            }
+        },
+        "/professions": {
+            "get": {
+                "x-controller-name": "ProfessionController",
+                "x-operation-name": "find",
+                "tags": [
+                    "ProfessionController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Profession model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Profession"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "harvests": {
+                                            "type": "boolean"
+                                        },
+                                        "recipe": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "ProfessionController.find"
+            }
+        },
+        "/resources/count": {
+            "get": {
+                "x-controller-name": "ResourceController",
+                "x-operation-name": "count",
+                "tags": [
+                    "ResourceController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Resource model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "ResourceController.count"
+            }
+        },
+        "/resources/{id}": {
+            "get": {
+                "x-controller-name": "ResourceController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "ResourceController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Resource model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Resource"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "ResourceController.findById"
+            }
+        },
+        "/resources": {
+            "get": {
+                "x-controller-name": "ResourceController",
+                "x-operation-name": "find",
+                "tags": [
+                    "ResourceController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Resource model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Resource"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "recipe": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "ResourceController.find"
+            }
+        },
+        "/set/{id}/equipments": {
+            "get": {
+                "x-controller-name": "SetEquipmentsController",
+                "x-operation-name": "find",
+                "tags": [
+                    "SetEquipmentsController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of equipment's belonging to set",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Equipment"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    }
+                ],
+                "operationId": "SetEquipmentsController.find"
+            }
+        },
+        "/sets/count": {
+            "get": {
+                "x-controller-name": "SetController",
+                "x-operation-name": "count",
+                "tags": [
+                    "SetController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Set model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "SetController.count"
+            }
+        },
+        "/sets/{id}/weapons": {
+            "get": {
+                "x-controller-name": "SetWeaponController",
+                "x-operation-name": "find",
+                "tags": [
+                    "SetWeaponController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of weapon's belonging to set",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Weapon"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    }
+                ],
+                "operationId": "SetWeaponController.find"
+            }
+        },
+        "/sets/{id}": {
+            "get": {
+                "x-controller-name": "SetController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "SetController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Set model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Set"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "SetController.findById"
+            }
+        },
+        "/sets": {
+            "get": {
+                "x-controller-name": "SetController",
+                "x-operation-name": "find",
+                "tags": [
+                    "SetController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Set model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Set"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "bonus": {
+                                            "type": "boolean"
+                                        },
+                                        "equipment_id": {
+                                            "type": "boolean"
+                                        },
+                                        "weapon_id": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "include": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "relation": {
+                                                "type": "string"
+                                            },
+                                            "scope": {
+                                                "properties": {
+                                                    "where": {
+                                                        "type": "object"
+                                                    },
+                                                    "fields": {
+                                                        "type": "object",
+                                                        "properties": {}
+                                                    },
+                                                    "offset": {
+                                                        "type": "integer",
+                                                        "minimum": 0
+                                                    },
+                                                    "limit": {
+                                                        "type": "integer",
+                                                        "minimum": 0
+                                                    },
+                                                    "skip": {
+                                                        "type": "integer",
+                                                        "minimum": 0
+                                                    },
+                                                    "order": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "SetController.find"
+            }
+        },
+        "/weapons/count": {
+            "get": {
+                "x-controller-name": "WeaponController",
+                "x-operation-name": "count",
+                "tags": [
+                    "WeaponController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Weapon model count",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "count": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "where",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "operationId": "WeaponController.count"
+            }
+        },
+        "/weapons/{id}/set": {
+            "get": {
+                "x-controller-name": "WeaponController",
+                "x-operation-name": "findOwningList",
+                "tags": [
+                    "WeaponController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Set model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Set"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "WeaponController.findOwningList"
+            }
+        },
+        "/weapons/{id}": {
+            "get": {
+                "x-controller-name": "WeaponController",
+                "x-operation-name": "findById",
+                "tags": [
+                    "WeaponController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Weapon model instance",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Weapon"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "WeaponController.findById"
+            }
+        },
+        "/weapons": {
+            "get": {
+                "x-controller-name": "WeaponController",
+                "x-operation-name": "find",
+                "tags": [
+                    "WeaponController"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of Weapon model instances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Weapon"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "explode": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "where": {
+                                    "type": "object"
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "_id": {
+                                            "type": "boolean"
+                                        },
+                                        "ankamaId": {
+                                            "type": "boolean"
+                                        },
+                                        "name": {
+                                            "type": "boolean"
+                                        },
+                                        "level": {
+                                            "type": "boolean"
+                                        },
+                                        "type": {
+                                            "type": "boolean"
+                                        },
+                                        "imgUrl": {
+                                            "type": "boolean"
+                                        },
+                                        "url": {
+                                            "type": "boolean"
+                                        },
+                                        "description": {
+                                            "type": "boolean"
+                                        },
+                                        "statistics": {
+                                            "type": "boolean"
+                                        },
+                                        "conditions": {
+                                            "type": "boolean"
+                                        },
+                                        "characteristics": {
+                                            "type": "boolean"
+                                        },
+                                        "recipe": {
+                                            "type": "boolean"
+                                        },
+                                        "setId": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "offset": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "limit": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "skip": {
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "order": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "include": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "relation": {
+                                                "type": "string"
+                                            },
+                                            "scope": {
+                                                "properties": {
+                                                    "where": {
+                                                        "type": "object"
+                                                    },
+                                                    "fields": {
+                                                        "type": "object",
+                                                        "properties": {}
+                                                    },
+                                                    "offset": {
+                                                        "type": "integer",
+                                                        "minimum": 0
+                                                    },
+                                                    "limit": {
+                                                        "type": "integer",
+                                                        "minimum": 0
+                                                    },
+                                                    "skip": {
+                                                        "type": "integer",
+                                                        "minimum": 0
+                                                    },
+                                                    "order": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "operationId": "WeaponController.find"
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "/"
+        }
+    ],
+    "components": {
+        "schemas": {
+            "Classe": {
+                "title": "Classe",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "category": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "videoUrl": {
+                        "type": "string"
+                    },
+                    "roles": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "spells": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "maleImg": {
+                        "type": "string"
+                    },
+                    "femaleImg": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Consumable": {
+                "title": "Consumable",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "statistics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "conditions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "recipe": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Equipment": {
+                "title": "Equipment",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "statistics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "conditions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "recipe": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "setId": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Set": {
+                "title": "Set",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "bonus": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "equipment_id": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "weapon_id": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Harness": {
+                "title": "Harness",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "recipe": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Havenbag": {
+                "title": "Havenbag",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "furnitures": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "decors": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "grounds": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Idol": {
+                "title": "Idol",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "statistics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "spells": {
+                        "type": "string"
+                    },
+                    "bonus": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "recipe": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Monster": {
+                "title": "Monster",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "statistics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "resistances": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "areas": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "drops": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Mount": {
+                "title": "Mount",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "statistics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "characteristics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "conditions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "recipe": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Pet": {
+                "title": "Pet",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "statistics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "conditions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Profession": {
+                "title": "Profession",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "harvests": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "recipe": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Resource": {
+                "title": "Resource",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "recipe": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            },
+            "Weapon": {
+                "title": "Weapon",
+                "properties": {
+                    "_id": {
+                        "type": "number"
+                    },
+                    "ankamaId": {
+                        "type": "number"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "level": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "imgUrl": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "statistics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "conditions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "characteristics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "recipe": {
+                        "type": "array",
+                        "items": {
+                            "type": "object"
+                        }
+                    },
+                    "setId": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "_id"
+                ]
+            }
+        }
+    }
+}

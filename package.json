@@ -25,12 +25,13 @@
     "@loopback/rest": "^1.4.0",
     "@loopback/rest-explorer": "^1.1.2",
     "@loopback/service-proxy": "^1.0.3",
-    "loopback-connector-mongodb": "^3.9.2",
     "express": "^4.16.4",
+    "loopback-connector-mongodb": "^3.9.2",
     "next": "^7.0.2",
     "npm-run-all": "^4.1.5",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "swagger-stats": "^0.95.11"
   },
   "devDependencies": {
     "@loopback/build": "^1.0.1",
