@@ -5,22 +5,19 @@ import { Item } from './item.model';
 @model()
 export class Set extends Item {
   @property({
-    type: 'array',
-    itemType: 'object',
+    type: 'object',
   })
-  bonus?: object[];
+  bonus?: object;
 
   @property({
-    type: 'array',
-    itemType: 'string',
+    type: 'number',
   })
-  equipment_id?: string[];
+  equipment_id?: number;
 
   @property({
-    type: 'array',
-    itemType: 'string',
+    type: 'number',
   })
-  weapon_id?: string[];
+  weapon_id?: number;
 
   @hasMany(() => Equipment)
   equipments?: Equipment[];
